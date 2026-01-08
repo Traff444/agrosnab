@@ -1,0 +1,89 @@
+import { Sprout } from 'lucide-react';
+
+export function Footer() {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <footer id="contacts" className="py-14 md:py-18 px-4 md:px-6 bg-color-footer border-t border-white/5">
+      <div className="max-w-[1200px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-14 mb-12 md:mb-14">
+          <div>
+            <div className="flex items-center gap-2 mb-4">
+              <Sprout className="w-7 h-7 text-color-accent" strokeWidth={1.8} />
+              <span className="font-heading font-bold text-xl text-text-on-dark">АгроСнаб</span>
+            </div>
+            <p className="text-sm text-subtext-on-dark leading-relaxed">
+              Оптовые поставки сельскохозяйственного растительного сырья
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-heading font-semibold text-base mb-4 text-text-on-dark">Навигация</h3>
+            <nav className="flex flex-col gap-2.5">
+              <button
+                onClick={() => scrollToSection('catalog')}
+                className="text-sm text-subtext-on-dark hover:text-text-on-dark hover:translate-x-1 transition-all duration-300 text-left"
+              >
+                Ассортимент
+              </button>
+              <button
+                onClick={() => scrollToSection('how-to-order')}
+                className="text-sm text-subtext-on-dark hover:text-text-on-dark hover:translate-x-1 transition-all duration-300 text-left"
+              >
+                Как заказать
+              </button>
+              <button
+                onClick={() => scrollToSection('terms')}
+                className="text-sm text-subtext-on-dark hover:text-text-on-dark hover:translate-x-1 transition-all duration-300 text-left"
+              >
+                Условия
+              </button>
+              <button
+                onClick={() => scrollToSection('delivery')}
+                className="text-sm text-subtext-on-dark hover:text-text-on-dark hover:translate-x-1 transition-all duration-300 text-left"
+              >
+                Доставка
+              </button>
+              <button
+                onClick={() => scrollToSection('contacts')}
+                className="text-sm text-subtext-on-dark hover:text-text-on-dark hover:translate-x-1 transition-all duration-300 text-left"
+              >
+                Контакты
+              </button>
+            </nav>
+          </div>
+
+          <div>
+            <h3 className="font-heading font-semibold text-base mb-4 text-text-on-dark">Контакты</h3>
+            <div className="flex flex-col gap-2.5">
+              <a
+                href="https://t.me/agrosna1b_bot"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-subtext-on-dark hover:text-color-accent hover:translate-x-1 transition-all duration-300 inline-block"
+              >
+                Telegram
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-white/5 pt-8 space-y-3 md:space-y-4">
+          <p className="text-xs md:text-sm text-subtext-on-dark leading-relaxed text-center max-w-3xl mx-auto">
+            Информация на сайте предназначена для оптовых клиентов.
+            Продукция реализуется как сельскохозяйственное сырьё
+            для хозяйственных и технических целей.
+          </p>
+          <p className="text-xs md:text-sm text-subtext-on-dark text-center opacity-60">
+            © 2026 АгроСнаб. Все права защищены.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
