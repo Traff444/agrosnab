@@ -1,6 +1,7 @@
 ## Overview
 - Проект: Vite + React + TypeScript + TailwindCSS (лендинг).
 - Основной рендер: `src/main.tsx` → `src/App.tsx`.
+- Деплой GitHub Pages настроен через GitHub Actions workflow `.github/workflows/deploy.yml` (build → upload artifact → deploy pages).
 
 ## Key Components
 - `src/components/Header.tsx`: фиксированная “плавающая капсула” (CSS класс `.header`), меняет состояние `scrolled` после 40px скролла.
