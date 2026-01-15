@@ -59,9 +59,9 @@ function App() {
             <div className="text-center surface-card-light rounded-lg p-6 transition-all duration-300 hover:shadow-lg">
               <Package className="w-9 h-9 md:w-10 md:h-10 text-color-accent-2 mx-auto mb-3 md:mb-4 opacity-80" strokeWidth={1.5} />
               <p className="font-heading font-bold text-2xl md:text-3xl mb-1 md:mb-2 text-color-accent">
-                <CountUp to={500} suffix="+" />
+                <CountUp to={20} suffix="+" />
               </p>
-              <p className="text-xs md:text-base text-subtext-on-light">тонн в месяц</p>
+              <p className="text-xs md:text-base text-subtext-on-light">сортов в ассортименте</p>
             </div>
             <div className="text-center surface-card-light rounded-lg p-6 transition-all duration-300 hover:shadow-lg">
               <TrendingUp className="w-9 h-9 md:w-10 md:h-10 text-color-accent-2 mx-auto mb-3 md:mb-4 opacity-80" strokeWidth={1.5} />

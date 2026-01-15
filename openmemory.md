@@ -10,7 +10,7 @@
 
 ## Sections (App)
 - Hero: `<HeroSection />`
-- Trust Block: 4 карточки со статистикой (теперь с анимацией счётчиков)
+- Trust Block: 4 карточки со статистикой (первый блок: `20+ сортов в ассортименте`, с анимацией счётчиков)
 - Product Catalog, How to Order, Wholesale Terms, Delivery, Quality, Final CTA, Footer
 
 ## Patterns / UX
