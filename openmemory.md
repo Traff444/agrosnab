@@ -15,7 +15,7 @@
 - Product Catalog, How to Order, Wholesale Terms, Delivery, Quality, Final CTA, Footer
 
 ## Patterns / UX
-- Hero background: desktop использует видео `/1234.mp4`; mobile использует `/hiro mobil1.png` с `object-contain`, подложка — размытие той же картинки (scale + blur) + плавные градиенты сверху/снизу для незаметного ухода.
+- Hero background: desktop использует видео `/1234.mp4`; mobile использует `/hiro mobil1.png` как `object-cover` без blur/градиентов.
 - Тексты преимуществ в Hero/desktop: «Минимальные партии от 25 кг», «Работа с оптовыми компаниями и магазинами».
 - Подзаголовок Hero (desktop): «АгроСнаб дистрибьютор натурального растительного сырья из Аргентины, Инди, Крыма и РФ».
 - Карточки ассортимента (`ProductCard` в секции `#catalog`) используют локальные обложки `public/tovar1.webp`…`tovar9.webp` (циклически по списку продуктов).
