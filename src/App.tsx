@@ -23,10 +23,15 @@ function App() {
   const [showAllProducts, setShowAllProducts] = useState(false);
 
   const productCoverImages = [
-    `${import.meta.env.BASE_URL}assortiment1.webp`,
-    `${import.meta.env.BASE_URL}assortiment2.webp`,
-    `${import.meta.env.BASE_URL}assortiment3.webp`,
-    `${import.meta.env.BASE_URL}assortiment4.webp`,
+    `${import.meta.env.BASE_URL}tovar1.webp`,
+    `${import.meta.env.BASE_URL}tovar2.webp`,
+    `${import.meta.env.BASE_URL}tovar3.webp`,
+    `${import.meta.env.BASE_URL}tovar4.webp`,
+    `${import.meta.env.BASE_URL}tovar5.webp`,
+    `${import.meta.env.BASE_URL}tovar6.webp`,
+    `${import.meta.env.BASE_URL}tovar7.webp`,
+    `${import.meta.env.BASE_URL}tovar8.webp`,
+    `${import.meta.env.BASE_URL}tovar9.webp`,
   ];
 
   const products = [
