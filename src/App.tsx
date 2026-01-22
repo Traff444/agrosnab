@@ -41,9 +41,8 @@ function App() {
     { name: 'Махорка Кентукки Strong', weight: '50 кг' },
     { name: 'Махорка Крым', weight: '40гр' },
     { name: 'Махорка Крым', weight: '100гр' },
-    { name: 'Махорка Perique Blend', weight: '100 кг' },
-    { name: 'Махорка Latakia Special', weight: '100 кг' },
-    { name: 'Махорка №9', weight: '100 кг' },
+    { name: 'Махорка Аргентина', weight: '40г' },
+    { name: 'Махорка Индия', weight: '100г' },
   ].map((p, idx) => ({
     ...p,
     imageUrl: productCoverImages[idx % productCoverImages.length],
