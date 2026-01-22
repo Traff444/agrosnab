@@ -35,10 +35,10 @@ function App() {
   ];
 
   const products = [
-    { name: 'Махорка Вирджиния Gold', weight: '50 кг' },
+    { name: 'Махорка "Крымская" Крым', weight: '40г' },
     { name: 'Махорка Берли Classic', weight: '50 кг' },
-    { name: 'Махорка Ориентал Premium', weight: '100 кг' },
-    { name: 'Махорка Кентукки Strong', weight: '50 кг' },
+    { name: 'Махорка "Золотая" Россия', weight: '40г' },
+    { name: 'Махорка "СССР" Россия', weight: '50г' },
     { name: 'Махорка Крым', weight: '40гр' },
     { name: 'Махорка Крым', weight: '100гр' },
     { name: 'Махорка Аргентина', weight: '40г' },
