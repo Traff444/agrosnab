@@ -10,12 +10,14 @@ export function HeroSection() {
         {/* Mobile Image */}
         <div className="absolute inset-0 md:hidden">
           <div
-            className="absolute inset-0 bg-center bg-cover scale-110 blur-md"
+            className="absolute inset-0 bg-center bg-cover scale-125 blur-lg"
             style={{
               backgroundImage: `url(${import.meta.env.BASE_URL}hiro%20mobil1.png)`,
             }}
             aria-hidden
           />
+          <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/40 to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/45 to-transparent" />
           <img
             src={`${import.meta.env.BASE_URL}hiro%20mobil1.png`}
             alt=""
