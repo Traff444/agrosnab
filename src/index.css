@@ -259,6 +259,19 @@
     pointer-events: none;
   }
 
+  .terms-bg::after {
+    content: '';
+    position: absolute;
+    inset: -20%;
+    background-image: url('/fon.webp');
+    background-size: 120%;
+    background-position: center;
+    opacity: 0.4;
+    filter: blur(0.5px);
+    animation: leavesFloat 12s ease-in-out infinite;
+    pointer-events: none;
+  }
+
   /* Terms cards: тонкая светлая рамка + чуть ярче текст */
   .terms-bg .terms-card {
     border-color: rgba(255, 255, 255, 0.35);

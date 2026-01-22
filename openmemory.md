@@ -25,7 +25,7 @@
 - Header capsule (CSS): `.header { width: calc(100% - 48px); max-width: 1200px; top: 16px; }`, в состоянии `.scrolled` расширяется на `width: 100%`.
 - Hero text block: `.hero-content { max-width: 560px; }` + микро-сдвиг `translateX(-12px)` на desktop.
 - Desktop Hero H1: акцентная строка `махорка оптом` в `HeroSection` использует **Inter Medium** (`font-medium`, weight 500). Первая строка заголовка "Сельскохозяйственная" использует шрифт **Great Vibes** (подключён через Google Fonts в `index.html`, CSS-класс `.great-vibes-regular` в `src/index.css`) с обычным регистром (первая буква заглавная, остальные прописные).
-- Фон секции `#terms` (“Условия оптовых поставок”): класс `.terms-bg` задаёт `background-image: url('/fon.webp')` и мягкий тёмный overlay через `::before`.
+- Фон секции `#terms` (“Условия оптовых поставок”): класс `.terms-bg` задаёт `background-image: url('/fon.webp')` и мягкий тёмный overlay через `::before`, а также `::after` с анимацией `leavesFloat` для движения фона.
 - Карточки в `#terms`: используются классы `terms-card` + `border border-white/35`; в `src/index.css` под `.terms-bg .terms-card` повышена читаемость текста (белые оттенки для h3/p/ul/strong) и добавлена мягкая тень.
 - Общий фон секций через `fon.webp`: класс `.fon-bg` (в `src/index.css`) задаёт `background-image: url('/fon.webp')` + overlay `::before`; применён к секциям `#catalog` и “Качество и происхождение сырья”.
 - Для `#catalog` добавлена заметная анимация фона: класс `.catalog-animated-bg` добавляет `::after` слой с `fon.webp` и анимацией `leavesFloat` (больше амплитуда, scale и opacity; быстрее цикл).
