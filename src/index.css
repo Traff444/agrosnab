@@ -226,6 +226,39 @@
     z-index: 1;
   }
 
+  @keyframes leavesFloat {
+    0% {
+      transform: translate3d(0, 0, 0);
+      opacity: 0.22;
+    }
+    50% {
+      transform: translate3d(-2%, 1.5%, 0);
+      opacity: 0.32;
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+      opacity: 0.22;
+    }
+  }
+
+  .catalog-animated-bg {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .catalog-animated-bg::after {
+    content: '';
+    position: absolute;
+    inset: -10%;
+    background-image: url('/fon.webp');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
+    filter: blur(1px);
+    animation: leavesFloat 18s ease-in-out infinite;
+    pointer-events: none;
+  }
+
   /* Terms cards: тонкая светлая рамка + чуть ярче текст */
   .terms-bg .terms-card {
     border-color: rgba(255, 255, 255, 0.35);
