@@ -25,6 +25,7 @@
 - Для счетчиков используется IntersectionObserver (запуск один раз при появлении) + requestAnimationFrame (плавный count-up).
 - Уважает `prefers-reduced-motion` (в таком режиме сразу показывает target без анимации).
 - Header capsule (CSS): `.header { width: calc(100% - 48px); max-width: 1200px; top: 16px; }`, в состоянии `.scrolled` расширяется на `width: 100%`.
+- Навигационные кнопки в Header/Footer и кнопки каталога открывают Telegram-бота вместо скролла по секциям.
 - Hero text block: `.hero-content { max-width: 560px; }` + микро-сдвиг `translateX(-12px)` на desktop.
 - Desktop Hero H1: акцентная строка `махорка оптом` в `HeroSection` использует **Inter Medium** (`font-medium`, weight 500). Первая строка заголовка "Сельскохозяйственная" использует шрифт **Great Vibes** (подключён через Google Fonts в `index.html`, CSS-класс `.great-vibes-regular` в `src/index.css`) с обычным регистром (первая буква заглавная, остальные прописные).
 - Фон секции `#terms` (“Условия оптовых поставок”): класс `.terms-bg` задаёт `background-image: url('/fon.webp')` и мягкий тёмный overlay через `::before` (без анимаций).

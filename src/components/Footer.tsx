@@ -1,11 +1,8 @@
 import { Sprout } from 'lucide-react';
 
 export function Footer() {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const openTelegram = () => {
+    window.open('https://t.me/agrosna1b_bot', '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -26,31 +23,31 @@ export function Footer() {
             <h3 className="font-heading font-semibold text-base mb-4 text-text-on-dark">Навигация</h3>
             <nav className="flex flex-col gap-2.5">
               <button
-                onClick={() => scrollToSection('catalog')}
+                onClick={openTelegram}
                 className="text-sm text-subtext-on-dark hover:text-text-on-dark hover:translate-x-1 transition-all duration-300 text-left"
               >
                 Ассортимент
               </button>
               <button
-                onClick={() => scrollToSection('how-to-order')}
+                onClick={openTelegram}
                 className="text-sm text-subtext-on-dark hover:text-text-on-dark hover:translate-x-1 transition-all duration-300 text-left"
               >
                 Как заказать
               </button>
               <button
-                onClick={() => scrollToSection('terms')}
+                onClick={openTelegram}
                 className="text-sm text-subtext-on-dark hover:text-text-on-dark hover:translate-x-1 transition-all duration-300 text-left"
               >
                 Условия
               </button>
               <button
-                onClick={() => scrollToSection('delivery')}
+                onClick={openTelegram}
                 className="text-sm text-subtext-on-dark hover:text-text-on-dark hover:translate-x-1 transition-all duration-300 text-left"
               >
                 Доставка
               </button>
               <button
-                onClick={() => scrollToSection('contacts')}
+                onClick={openTelegram}
                 className="text-sm text-subtext-on-dark hover:text-text-on-dark hover:translate-x-1 transition-all duration-300 text-left"
               >
                 Контакты

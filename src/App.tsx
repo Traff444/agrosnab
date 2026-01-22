@@ -110,7 +110,10 @@ function App() {
           <div className="text-center">
             {!showAllProducts ? (
               <button
-                onClick={() => setShowAllProducts(true)}
+                onClick={() => {
+                  setShowAllProducts(true);
+                  window.open('https://t.me/agrosna1b_bot', '_blank', 'noopener,noreferrer');
+                }}
                 className="inline-flex items-center gap-2 border-2 border-white text-white hover:bg-white/10 transition-colors px-6 py-2.5 md:px-8 md:py-3 rounded-lg font-medium text-sm md:text-base"
               >
                 Показать весь ассортимент
@@ -118,7 +121,10 @@ function App() {
               </button>
             ) : (
               <button
-                onClick={() => setShowAllProducts(false)}
+                onClick={() => {
+                  setShowAllProducts(false);
+                  window.open('https://t.me/agrosna1b_bot', '_blank', 'noopener,noreferrer');
+                }}
                 className="inline-flex items-center gap-2 border-2 border-white text-white hover:bg-white/10 transition-colors px-6 py-2.5 md:px-8 md:py-3 rounded-lg font-medium text-sm md:text-base"
               >
                 Свернуть ассортимент

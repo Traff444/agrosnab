@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Sprout, Menu, X } from 'lucide-react';
+import { Sprout, Menu } from 'lucide-react';
 
 export function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -18,12 +17,8 @@ export function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-    setMobileMenuOpen(false);
+  const openTelegram = () => {
+    window.open('https://t.me/agrosna1b_bot', '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -38,31 +33,31 @@ export function Header() {
 
         <nav className="hidden md:flex items-center gap-6 lg:gap-8">
           <button
-            onClick={() => scrollToSection('catalog')}
+            onClick={openTelegram}
             className="nav-link text-sm font-medium transition-colors duration-200"
           >
             Ассортимент
           </button>
           <button
-            onClick={() => scrollToSection('how-to-order')}
+            onClick={openTelegram}
             className="nav-link text-sm font-medium transition-colors duration-200"
           >
             Как заказать
           </button>
           <button
-            onClick={() => scrollToSection('terms')}
+            onClick={openTelegram}
             className="nav-link text-sm font-medium transition-colors duration-200"
           >
             Условия
           </button>
           <button
-            onClick={() => scrollToSection('delivery')}
+            onClick={openTelegram}
             className="nav-link text-sm font-medium transition-colors duration-200"
           >
             Доставка
           </button>
           <button
-            onClick={() => scrollToSection('contacts')}
+            onClick={openTelegram}
             className="nav-link text-sm font-medium transition-colors duration-200"
           >
             Контакты
@@ -70,49 +65,12 @@ export function Header() {
         </nav>
 
         <button
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          onClick={openTelegram}
           className="header-menu-btn md:hidden p-1"
         >
-          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          <Menu className="w-6 h-6" />
         </button>
       </div>
-
-      {mobileMenuOpen && (
-        <div className="mobile-menu md:hidden border-t">
-          <nav className="px-6 py-4 flex flex-col gap-4">
-            <button
-              onClick={() => scrollToSection('catalog')}
-              className="mobile-nav-link text-sm transition-colors text-left"
-            >
-              Ассортимент
-            </button>
-            <button
-              onClick={() => scrollToSection('how-to-order')}
-              className="mobile-nav-link text-sm transition-colors text-left"
-            >
-              Как заказать
-            </button>
-            <button
-              onClick={() => scrollToSection('terms')}
-              className="mobile-nav-link text-sm transition-colors text-left"
-            >
-              Условия
-            </button>
-            <button
-              onClick={() => scrollToSection('delivery')}
-              className="mobile-nav-link text-sm transition-colors text-left"
-            >
-              Доставка
-            </button>
-            <button
-              onClick={() => scrollToSection('contacts')}
-              className="mobile-nav-link text-sm transition-colors text-left"
-            >
-              Контакты
-            </button>
-          </nav>
-        </div>
-      )}
     </header>
   );
 }
